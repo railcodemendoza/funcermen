@@ -16,14 +16,18 @@ export const Contacto = () => {
             <div id='contacto-der'>
                 <h3>Contacto</h3>
                 <div className='info-contacto'>
-                    <h5>WhatsApp - solo mensajes</h5>
+                    <h4>WhatsApp - solo mensajes</h4>
                     <h5>+54-261-2085393</h5>
                 </div>
                 <div className='info-contacto'>
-                    <h5>Dirección</h5>
+                    <h4>Dirección</h4>
                     <h5>
-                    Alfonsina Storni 234, 
+                    Alfonsina Storni 234,
+                    </h5>
+                    <h5>
                     San José - Guaymallén
+                    </h5>
+                    <h5>
                     MENDOZA 
                     </h5>
                 </div>
@@ -56,6 +60,15 @@ export const Contacto = () => {
         <div id='copy'>
             <h5>&copy; Rail. All right reserved.</h5>
         </div>
+        <a
+            href="https://wa.me/5492612085393"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-float"
+        >
+            <img src="whatsapp-float.png" alt="WhatsApp" />
+            <h3>¡Contactanos!</h3>
+        </a>
     </section>
     
     </>
