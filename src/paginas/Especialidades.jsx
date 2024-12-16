@@ -10,7 +10,7 @@ const Especialidades = () => {
     </section>
     <section id='lista'>
         <h2>Especialidades adultos</h2>
-        <div>
+        <div id="especialidades-lista-contenedor">
             <ul className="especialidades-lista">
                 <li>Neurología</li>
                 <li>Psicología</li>
@@ -25,7 +25,7 @@ const Especialidades = () => {
                 <li>Fisiatra</li>
             </ul>
         </div>
-        <img src="atencion-integral (2).png" alt="" />
+        <img src="clinica-medica.png" alt="" />
     </section>
     <section id='infantiles'>
         <h2>Especialidades infantiles</h2>
@@ -40,9 +40,9 @@ const Especialidades = () => {
         </ul>
     </section>
     <section id='cuida'>
-        <img src="atencion-integral (3).png" alt="" />
-        <div>
-            <h3>Cuidá tu bienestar</h3>
+        <img src="pediatria.png" alt="" />
+        <div id='cuida-h3-contenedor'>
+            <h3 id='cuida-primer-h3'>Cuidá tu bienestar</h3>
             <h3>Agendá tu consulta</h3>
         </div>
     </section>
