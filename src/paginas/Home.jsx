@@ -16,9 +16,21 @@ function Home() {
         </section>
         <section id='nosotros'>
             <h2>Sobre Nosotros</h2>
-            <p>
+            {/* <p>
             En Funcermen, nos dedicamos a ofrecer un cuidado integral y especializado en la salud del cerebro, el bienestar físico y emocional, con un enfoque en la excelencia médica y humana.
             Contamos con un equipo multidisciplinario altamente capacitado en diversas especialidades. 
+            Nuestra prioridad es brindar una atención personalizada y de calidad, acompañando a cada paciente en su camino hacia el 
+            bienestar con un enfoque preciso y cálido, orientado siempre a 
+            mejorar su calidad de vida.
+            </p> */}
+
+            <p>
+            En <span id="bold">Funcermen</span>, nos dedicamos a ofrecer un cuidado integral y especializado en la salud del cerebro, el bienestar físico y emocional, con un enfoque en la excelencia médica y humana.
+            </p>
+            <p>
+            Contamos con un equipo multidisciplinario altamente capacitado en diversas especialidades.    
+            </p>
+            <p>
             Nuestra prioridad es brindar una atención personalizada y de calidad, acompañando a cada paciente en su camino hacia el 
             bienestar con un enfoque preciso y cálido, orientado siempre a 
             mejorar su calidad de vida.
@@ -50,6 +62,7 @@ function Home() {
             </div>
         </section>
         <section id='convenios'>
+            <div id="franja-Gris"></div>
             <h2>Convenios</h2>
             <div id='contenedor-marcas-imagenes'>
             <img src="ospe.png" alt="ospe" />
