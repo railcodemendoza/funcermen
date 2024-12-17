@@ -1,4 +1,3 @@
-
 :root {
   --color-principal: #034844;
   --color-secundario: #CFDBC0;
@@ -27,6 +26,8 @@
   border-radius: 50%;
   margin: 10px 30px;
   padding: 10px;
+  margin-left: 10vw;
+  /* Agregado por pachimanok */
 }
 
 .logo-contenedor img {
@@ -38,18 +39,19 @@
 
 .menu-center {
   display: flex;
-  
+
   /* gap: 20px; */
   /* margin-right: 15px; */
   gap: 3vw;
-  margin-right: 4vw;
+  /* margin-right: 4vw; */
+  margin-right: 9vw;
 }
 
 .menu-center a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  
+
   /* text-shadow: 1px 0px 3px black; */
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
@@ -92,7 +94,7 @@
 
 /* HOME */
 
-.inicio{
+.inicio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,15 +102,15 @@
   color: white;
   min-height: 100vh;
 
-  h1{
+  h1 {
     font-size: 100px;
     font-weight: 100;
     margin: 30px 0;
 
     font-family: "Philosopher", sans-serif;
   }
-  
-  h3{
+
+  h3 {
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -119,20 +121,20 @@
 }
 
 #inicio {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('portada.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('portada.png');
   background-size: cover;
   background-position: center;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; 
+  color: white;
 }
 
 
 
-#nosotros{
+#nosotros {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +142,8 @@
 
   /* min-height: 100vh; */
   padding: 8vw;
-  h2{
+
+  h2 {
     color: var(--color-principal);
     font-size: 45px;
 
@@ -149,11 +152,13 @@
     font-family: "Philosopher", sans-serif;
     font-weight: bold;
   }
-  #bold{
+
+  #bold {
     color: var(--color-principal);
     font-weight: bold;
   }
-  p{
+
+  p {
     width: 80%;
     font-size: 25px;
     text-align: center;
@@ -166,7 +171,7 @@
   }
 }
 
-#opciones{
+#opciones {
   background-color: #034844;
   height: 100vh;
   display: flex;
@@ -174,14 +179,16 @@
   justify-content: center;
 }
 
-#opciones-contenedor{
+#opciones-contenedor {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  margin: 0 5rem;
+
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,44 +199,53 @@
   min-width: 220px;
   height: 350px;
   padding-top: 30px;
-  border-radius: 10px;
-  border: solid 7px #00000045;
-  transition: all 0.5s ease-out;
+  border-radius: 20px;
+  margin: 1rem;
+  /* pachimanok say: antes 10px */
+  /* border: solid 7px #00000045; */
+
 
   height: 30vw;
   width: 30vw;
 
 
-  h4{
+  h4 {
     font-size: 30px;
     font-family: 'Quicksand';
     font-weight: 500;
-  
+
     margin: 3vw;
     font-size: 3vw;
   }
-  img{
+
+  img {
     width: 6vw;
-    
+
     /* margin-top: 15px; */
     /* min-width: 90px; */
     width: 8vw;
   }
 }
 
-.card:hover{
+/* .card:hover {
   scale: 1.05;
   box-shadow: 0 0 13px rgba(255, 255, 255, 0.468);
+} */
+
+#especialidades-card {
+  background-color: var(--color-secundario);
+  margin-left: 5rem;
+  /* Add by pachimanok */
 }
 
-#especialidades-card{
-  background-color: var(--color-secundario);
-}
-#estudios-card{
+#estudios-card {
   background-color: var(--color-terciario);
 }
-#talleres-card{
+
+#talleres-card {
   background-color: var(--color-cuaternario);
+  margin-right: 5rem;
+  /* Add by pachimanok */
 }
 
 .boton-circulo {
@@ -249,8 +265,9 @@
   width: 132px;
   border-radius: 150px 150px 0 0;
   text-decoration: none;
+  transition: all 0.5s ease-out;
 
-  p{
+  p {
     margin: 0;
     font-size: 15px;
     font-family: Nunito;
@@ -259,73 +276,95 @@
   }
 }
 
-#convenios{
-  /* padding: 2vw 0; */
+.boton-circulo:hover {
+  scale: 1.05;
+  box-shadow: 0 0 13px rgba(255, 255, 255, 0.468);
+}
 
-  h2{
+#convenios {
+  /* padding: 2vw 0; */
+  height: 100vh;
+  /* Add by: pachimanok */
+  padding: 7vh 0;
+  /* Add by: pachimanok */
+
+
+  h2 {
     text-align: center;
     color: var(--color-principal);
-    
+
     /* margin-top: 0; */
     /* font-size: 50px; */
     font-size: 6vw;
     margin: 30px;
     font-family: 'Philosopher';
+    margin-bottom: 8rem;
+    /* Add by: pachimanok */
   }
 }
 
-#franja-Gris{
+#franja-Gris {
   width: 100%;
   background-color: lightgray;
   height: 10vw;
 }
 
-#contenedor-marcas-imagenes{
+#contenedor-marcas-imagenes {
+
   display: flex;
   flex-direction: row;
   max-width: 100vw;
   justify-content: space-around;
 
-  img{
-    width: 12vw;
+  img {
+    width: 10vw;
+    /* pachimanok say: antes 12vw */
+    margin: auto;
+    /* Add by: pachikmanok */
   }
 }
 
-#atencion{
+#atencion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; - pachimanok */
   background-color: lightgrey;
-  
+  height: 100vh;
+
   /* min-height: 100vh; */
-  padding: 5vw;
-  h2{
-    font-size: 50px;
-    padding: 5px 30px;
+  /* padding: 5vw; - pachimanok */
+  padding-top: 9vw;
+
+  h2 {
+    font-size:
+      /* 50px; */
+      4rem;
+    /* changed by pachimanok */
     border-radius: 5px;
     font-family: 'Philosopher';
   }
 }
 
-#atencion-primer-texto{
+#atencion-primer-texto {
   background-color: #B3D1C0;
   color: white;
   margin-bottom: 0;
-
+  padding: 3px 1rem
+    /* +pachimanok */
 }
 
-#atencion-segundo-texto{
+#atencion-segundo-texto {
   color: #034844;
   margin-top: 0;
 }
 
-#atencion-integral-imagenes-contenedor{
+#atencion-integral-imagenes-contenedor {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 
-  img{
+  img {
     width: 32vw;
     height: fit-content;
     max-height: 200px;
@@ -336,15 +375,27 @@
 
 #atencion-integral-imagenes-contenedor {
   display: flex;
-  gap: 10px; 
+  gap:
+    /* 10px; */
+    20px;
+  /* changed by pachimanok */
 }
 
 #atencion-integral-imagenes-contenedor img {
-  width: 30vw;
-  height: 200px;
+  width:
+    /* 30vw; */
+    25vw;
+  /* changed by pachimanok */
+  height:
+    /* 200px;  */
+    25vh;
+  /* changed by pachimanok */
   object-fit: cover;
-  border-radius: 8px;
-  
+  border-radius:
+    /* 8px; */
+    20px;
+  /* changed by pachimanok */
+
   transition: all 0.5s ease-out;
 }
 
@@ -352,21 +403,23 @@
   scale: 1.05;
 }
 
-#directores{
+#directores {
+  height: 100vh; /* + pachkmanok */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15vw;
+  gap: 20vw;
   background-color: #034844;
-  
+
   /* height: 100vh; */
 
-  h3{
+  h3 {
     font-size: 45px;
     font-family: 'Philosopher';
     font-weight: 100;
   }
-  h4{
+
+  h4 {
     font-size: 35px;
     font-family: 'Nunito';
     font-weight: 500;
@@ -374,21 +427,21 @@
   }
 }
 
-#director-contenedor{
+#director-contenedor {
   color: white;
   text-align: center;
 }
 
-#directora-contenedor{
+#directora-contenedor {
   color: white;
   text-align: center;
-  
-  h3{
+
+  h3 {
     width: min-content;
   }
 }
 
-#contacto-copy{
+#contacto-copy {
   background-color: lightgray;
   display: flex;
   flex-direction: column;
@@ -396,7 +449,7 @@
   justify-content: center;
 }
 
-#contacto{
+#contacto {
   background-color: lightgray;
   display: flex;
   flex-direction: row;
@@ -407,7 +460,7 @@
   width: 95%;
 }
 
-#contacto-izq{
+#contacto-izq {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -417,11 +470,11 @@
   padding: 10px;
 }
 
-#contacto-der{
+#contacto-der {
   text-align: center;
   font-size: 25px;
 
-  h3{
+  h3 {
     font-size: 45px;
     color: var(--color-principal);
     margin: 0;
@@ -429,53 +482,54 @@
   }
 }
 
-.info-contacto{
+.info-contacto {
   margin: 30px 0;
 
-  h4{
+  h4 {
     margin: 0;
     font-family: 'Philosopher';
   }
-  h5{
+
+  h5 {
     margin: 5px;
     font-weight: 100;
     font-family: 'Philosopher';
   }
 }
 
-#redes-contenedor{
+#redes-contenedor {
   gap: 20px;
   display: flex;
   justify-content: center;
 
-  img{
+  img {
     width: 40px;
     height: 40px;
     transition: all 0.5s ease-out;
   }
 
-  img:hover{
+  img:hover {
     scale: 1.2;
   }
 }
 
-iframe{
+iframe {
   height: 20vw;
   min-height: 200px;
   width: 100%;
 }
 
 
-#copy{
+#copy {
   border-top: solid 3px white;
   width: 100%;
   font-family: 'Nunito';
 
-  h5{
+  h5 {
     font-size: 20px;
     color: white;
     margin: 20px;
-}
+  }
 }
 
 .whatsapp-float {
@@ -492,7 +546,7 @@ iframe{
   align-items: center;
   text-decoration: none;
 
-  h3{
+  h3 {
     color: #64B161;
     font-size: 25px;
     margin: 5px;
@@ -513,22 +567,22 @@ iframe{
 
 /* ESPECIALIDADES */
 
-#especialidades{
+#especialidades {
   background-color: var(--color-secundario);
 
-  h1{
+  h1 {
     font-family: 'Quicksand';
     font-weight: 500;
   }
 }
 
-#lista{
+#lista {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* padding: 3vw 0; */
 
-  h2{
+  h2 {
     font-size: 80px;
     margin: 30px;
     color: var(--color-principal);
@@ -536,7 +590,7 @@ iframe{
     font-weight: 600;
   }
 
-  img{
+  img {
     /* margin-top: 2vw; */
     /* width: 50vw; */
     /* height: 25vw; */
@@ -548,7 +602,7 @@ iframe{
   }
 }
 
-#especialidades-lista-contenedor{
+#especialidades-lista-contenedor {
   margin-bottom: 30px;
 }
 
@@ -556,7 +610,7 @@ iframe{
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem 20rem;
   justify-items: start;
   margin: 20px;
@@ -564,10 +618,10 @@ iframe{
 
 .especialidades-lista li {
   position: relative;
-  padding-left: 1.5rem; 
+  padding-left: 1.5rem;
   font-size: 2rem;
   color: #333;
-  font-family: 'Philosopher'; 
+  font-family: 'Philosopher';
 }
 
 .especialidades-lista li::before {
@@ -580,21 +634,21 @@ iframe{
 }
 
 .linea {
-  width: 100%; 
-  height: 1px; 
+  width: 100%;
+  height: 1px;
   background-color: white;
-  margin: 10px auto; 
+  margin: 10px auto;
 }
 
 
-#infantiles{
+#infantiles {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5vw 0;
   background-color: #CFDBC0;
 
-  h2{
+  h2 {
     font-size: 80px;
     margin: 0;
     margin-bottom: 45px;
@@ -604,7 +658,7 @@ iframe{
   }
 }
 
-#cuida{
+#cuida {
   display: flex;
   align-items: center;
   /* justify-content: space-evenly; */
@@ -612,11 +666,13 @@ iframe{
 
   justify-content: left;
   background-color: #E6E8E8;
-  img{
+
+  img {
     width: 41vw;
     height: 100%;
   }
-  h3{
+
+  h3 {
     /* color: black; */
     font-size: 45px;
     margin: 0;
@@ -624,14 +680,14 @@ iframe{
   }
 }
 
-#cuida-h3-contenedor{
+#cuida-h3-contenedor {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-#cuida-primer-h3{
+#cuida-primer-h3 {
   background-color: var(--color-terciario);
   padding: 15px;
   border-radius: 15px;
@@ -641,15 +697,16 @@ iframe{
 
 /* ESTUDIOS */
 
-#estudios{
+#estudios {
   background-color: var(--color-terciario);
-  h1{
+
+  h1 {
     font-family: 'Quicksand';
     font-weight: 500;
   }
 }
 
-#ofrecemos{
+#ofrecemos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -664,7 +721,8 @@ iframe{
     margin-top: 0;
     font-family: 'Philosopher';
   }
-  img{
+
+  img {
     width: 40vw;
     border-radius: 15px;
   }
@@ -709,7 +767,7 @@ iframe{
   transition: all 0.5s ease-out;
 }
 
-.acordeon-icon:hover{
+.acordeon-icon:hover {
   scale: 1.3;
 }
 
@@ -742,11 +800,12 @@ iframe{
 
 /* TALLERES */
 
-#talleres{
+#talleres {
   background-color: var(--color-cuaternario);
-  h1{
+
+  h1 {
     font-family: 'Quicksand';
-  font-weight: 500;
+    font-weight: 500;
   }
 }
 
@@ -757,7 +816,7 @@ iframe{
   margin: 0 auto;
   max-width: 800px;
 
-  p{
+  p {
     font-family: 'Quicksand';
   }
 }
@@ -793,8 +852,8 @@ iframe{
   left: 0;
 }
 
-#imagen-talleres{
-  img{
+#imagen-talleres {
+  img {
     width: 100%;
   }
 }
@@ -806,47 +865,48 @@ blockquote {
   margin-top: 2rem;
   font-size: 1.2rem;
 
-  em{
+  em {
     font-family: 'Philosopher';
     font-size: 40px;
   }
 }
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
 
   /* ESPECIALIDADES */
 
-  #lista{
-    h2{
+  #lista {
+    h2 {
       font-size: 40px;
       text-align: center;
     }
   }
-  
-  .especialidades-lista{
+
+  .especialidades-lista {
     gap: 1rem 3rem;
     margin: 15px 0;
-  
-    li{
+
+    li {
       font-size: 25px;
       padding-left: 2.5rem;
     }
   }
-  
+
   .especialidades-lista li::before {
     font-size: 25px;
     left: 3px;
   }
-  
-  #infantiles{
-    h2{
+
+  #infantiles {
+    h2 {
       font-size: 40px;
       text-align: center;
     }
-    ul{
+
+    ul {
       gap: 1rem 2rem;
     }
-  }  
+  }
 
 }
 
@@ -884,209 +944,217 @@ blockquote {
   }
 
 
-/* HOME */
+  /* HOME */
 
 
-.inicio{
-  h1{
-    font-size: 50px;
+  .inicio {
+    h1 {
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
   }
-  h3{
-    font-size: 30px;
-  }
-}
 
-#nosotros{
+  #nosotros {
 
-  padding: 8vw 0vw;
-  h2{
-    font-size: 45px;
+    padding: 8vw 0vw;
+
+    h2 {
+      font-size: 45px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 30px;
+      font-size: 18px;
+    }
   }
-  p{
-    margin: 0;
-    line-height: 30px;
+
+  #opciones-contenedor {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 70vw;
+    min-width: 220px;
+    height: 110px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: start;
+
+    h4 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    img {
+      min-width: 50px;
+    }
+  }
+
+  .boton-circulo {
+    left: 65%;
+  }
+
+  #convenios {
+    h2 {
+      font-size: 35px;
+    }
+  }
+
+  #contenedor-marcas-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #atencion {
+    padding: 5vw;
+  }
+
+  #atencion-integral-imagenes-contenedor {
+    flex-direction: column;
+
+    img {
+      width: 80vw;
+      height: 215px;
+    }
+  }
+
+  #directores {
+    flex-direction: column;
+    height: auto;
+
+    gap: 0;
+  }
+
+  #director-contenedor {
+    h3 {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 25px;
+    }
+  }
+
+  #directora-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      margin: 15px;
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 25px;
+    }
+  }
+
+
+  /* ESPECIALIDADES */
+
+  #lista {
+    h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+
+  .especialidades-lista {
+    gap: 1rem 0rem;
+    margin: 15px 0;
+
+    li {
+      font-size: 18px;
+    }
+  }
+
+  .especialidades-lista li::before {
     font-size: 18px;
-  }
-}
-
-#opciones-contenedor{
-  flex-direction: column;
-  gap: 15px;
-}  
-
-.card{
-  flex-direction: column;
-  width: 70vw;
-  min-width: 220px;
-  height: 110px;
-  justify-content: space-between;
-  padding: 10px 20px;
-  align-items: start;
-
-  h4{
-    margin: 0;
-    font-size: 20px;
-  }
-  img{
-    min-width: 50px;
-  }
-}
-
-.boton-circulo{
-  left: 65%;
-}
-
-#convenios{
-  h2{
-    font-size: 35px;
-  }
-}
-
-#contenedor-marcas-imagenes{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  img{
-    width: 100%;
-  }
-}
-
-#atencion{
-  padding: 5vw;
-}
-
-#atencion-integral-imagenes-contenedor {
-  flex-direction: column;
-
-  img{
-    width: 80vw;
-    height: 215px;
-  }
-}
-
-#directores{
-  flex-direction: column;
-  height: auto;
-
-  gap: 0;
-}
-
-#director-contenedor{
-  h3{
-    font-size: 30px;
-  }
-  h4{
-    font-size: 25px;
-  }
-}
-
-#directora-contenedor{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h3{
-    margin: 15px;
-    font-size: 30px;
-  }
-  h4{
-    font-size: 25px;
-  }
-}
-
-
-/* ESPECIALIDADES */
-
-#lista{
-  h2{
-    font-size: 40px;
-    text-align: center;
-  }
-}
-
-.especialidades-lista{
-  gap: 1rem 0rem;
-  margin: 15px 0;
-
-  li{
-    font-size: 18px;
-  }
-}
-
-.especialidades-lista li::before {
-  font-size: 18px;
-  left: 3px;
-}
-
-#infantiles{
-  h2{
-    font-size: 40px;
-    text-align: center;
-  }
-  ul{
-    gap: 1rem 2rem;
-  }
-}
-
-#cuida{
-  flex-direction: column-reverse;
-  gap: 15px;
-
-  img{
-    width: 90%;
+    left: 3px;
   }
 
-  h3{
-    text-align: center;
-    font-size: 30px;
+  #infantiles {
+    h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    ul {
+      gap: 1rem 2rem;
+    }
   }
-}
 
-/* TALLERES */
+  #cuida {
+    flex-direction: column-reverse;
+    gap: 15px;
 
-#taller-estimulacion-cognitiva {
-  padding: 15px;
+    img {
+      width: 90%;
+    }
 
-  p{
-    margin-left: 10px;
+    h3 {
+      text-align: center;
+      font-size: 30px;
+    }
   }
-}
 
+  /* TALLERES */
 
-/* ESTUDIOS */ 
+  #taller-estimulacion-cognitiva {
+    padding: 15px;
 
-#ofrecemos{
-  h4{
-    font-size: 20px;
-    width: auto;
-    line-height: 1.5rem;
+    p {
+      margin-left: 10px;
+    }
   }
-  img{
+
+
+  /* ESTUDIOS */
+
+  #ofrecemos {
+    h4 {
+      font-size: 20px;
+      width: auto;
+      line-height: 1.5rem;
+    }
+
+    img {
+      width: 95%;
+    }
+  }
+
+  .acordeon-item {
     width: 95%;
   }
-}
 
-.acordeon-item {
-  width: 95%;
-}
+  .acordeon-titulo {
+    font-size: 20px;
+  }
 
-.acordeon-titulo{
-  font-size: 20px;
-}
+  .acordeon-contenido li {
+    font-size: 20px;
+  }
 
-.acordeon-contenido li{
-  font-size: 20px;
-}
-
-.acordeon-contenido li::before{
-  font-size: 20px;
-}
+  .acordeon-contenido li::before {
+    font-size: 20px;
+  }
 
 
-/* CONTACTO */
+  /* CONTACTO */
 
-#contacto{
-  flex-direction: column;
-}
+  #contacto {
+    flex-direction: column;
+  }
 
 }

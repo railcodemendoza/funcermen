@@ -62,7 +62,7 @@ function Home() {
             </div>
         </section>
         <section id='convenios'>
-            <div id="franja-Gris"></div>
+          {/*   <div id="franja-Gris"></div> - pachimanok */}
             <h2>Convenios</h2>
             <div id='contenedor-marcas-imagenes'>
             <img src="ospe.png" alt="ospe" />
