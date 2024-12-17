@@ -122,7 +122,7 @@
 
 #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('portada.png');
+    url('../public/portada.png'); /* url estaticac no la muestar produccion pachimanok */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
