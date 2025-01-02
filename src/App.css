@@ -177,6 +177,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 0 4vw;
 }
 
 #opciones-contenedor {
@@ -184,8 +186,8 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  margin: 0 5rem;
-
+  /* margin: 0 5rem; */
+  margin: 2rem;
 }
 
 .card {
@@ -232,10 +234,18 @@
   box-shadow: 0 0 13px rgba(255, 255, 255, 0.468);
 } */
 
+/* #especialidades-card {
+  background-color: var(--color-secundario);
+  margin-left: 5rem; */
+  /* Add by pachimanok */
+/* } */
+
 #especialidades-card {
   background-color: var(--color-secundario);
-  margin-left: 5rem;
-  /* Add by pachimanok */
+}
+
+#especialidades-card {
+  background-color: var(--color-secundario);
 }
 
 #estudios-card {
@@ -244,7 +254,7 @@
 
 #talleres-card {
   background-color: var(--color-cuaternario);
-  margin-right: 5rem;
+  /* margin-right: 5rem; */
   /* Add by pachimanok */
 }
 
@@ -343,6 +353,7 @@
     /* changed by pachimanok */
     border-radius: 5px;
     font-family: 'Philosopher';
+    text-align: center;
   }
 }
 
@@ -550,7 +561,9 @@ iframe {
     color: #64B161;
     font-size: 25px;
     margin: 5px;
-    font-weight: 300;
+    margin-right: 20px;
+    font-weight: 500;
+    font-family: Quicksand;
   }
 }
 
@@ -974,7 +987,7 @@ blockquote {
 
   #opciones-contenedor {
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
   }
 
   .card {
@@ -1098,6 +1111,7 @@ blockquote {
   #cuida {
     flex-direction: column-reverse;
     gap: 15px;
+    padding: 5vw 0;
 
     img {
       width: 90%;
@@ -1157,4 +1171,10 @@ blockquote {
     flex-direction: column;
   }
 
+}
+
+@media (max-width: 425px) {
+  #opciones{
+    height: auto;
+  }
 }
