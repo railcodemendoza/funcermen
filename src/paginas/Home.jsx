@@ -1,6 +1,7 @@
 import React from "react";
 import { Contacto } from "../componentes/Contacto";
 import { HashLink } from 'react-router-hash-link';
+import Carousel from "../componentes/Carousel";
 
 function Home() {
 
@@ -62,9 +63,9 @@ function Home() {
             </div>
         </section>
         <section id='convenios'>
-          {/*   <div id="franja-Gris"></div> - pachimanok */}
+          
             <h2>Convenios</h2>
-            <div id='contenedor-marcas-imagenes'>
+            {/* <div id='contenedor-marcas-imagenes'>
             <img src="ospe.png" alt="ospe" />
             <img src="sancor.png" alt="sancor" />
             <img src="osde.png" alt="osde" />
@@ -73,8 +74,10 @@ function Home() {
             <img src="galeno.png" alt="galeno" />
             <img src="medife.png" alt="medife" />
             <img src="ospe.png" alt="osdipp" />
-            </div>
+            </div> */}
+            <Carousel />
         </section>
+        {/* <Carousel /> */}
         <section id='atencion'>
             <h2 id='atencion-primer-texto'>Atención Integral</h2>
             <h2 id='atencion-segundo-texto'>para cada etapa de tu vida</h2>
