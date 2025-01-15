@@ -13,7 +13,9 @@ const Menu = () => {
   return (
     <header id="header">
       <div className="logo-contenedor">
-        <img src="logo.png" alt="Logo" />
+        <HashLink to="/">
+          <img src="logo.png" alt="Logo" />
+          </HashLink>
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>
