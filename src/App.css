@@ -72,10 +72,12 @@
 .hamburger .line {
   width: 30px;
   height: 3px;
-  background-color: var(--color-principal);
+  /* background-color: var(--color-principal); */
   margin: 4px 0;
   transition: all 0.3s ease;
   box-shadow: 0px 0px 3px #ffffff;
+
+  background-color: white;
 }
 
 .hamburger .line.open:nth-child(1) {
@@ -178,16 +180,18 @@
   align-items: center;
   justify-content: center;
 
-  padding: 0 4vw;
+  /* padding: 0 4vw; */
 }
 
 #opciones-contenedor {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
+  /* width: 100%; */
   /* margin: 0 5rem; */
   margin: 2rem;
+
+  width: 80%;
 }
 
 .card {
@@ -202,14 +206,14 @@
   height: 350px;
   padding-top: 30px;
   border-radius: 20px;
-  margin: 1rem;
+  /* margin: 1rem; */
   /* pachimanok say: antes 10px */
   /* border: solid 7px #00000045; */
 
 
   height: 30vw;
   width: 30vw;
-
+  margin: 1vw;
 
   h4 {
     font-size: 30px;
@@ -291,32 +295,25 @@
   box-shadow: 0 0 13px rgba(255, 255, 255, 0.468);
 }
 
+
 #convenios {
-  /* padding: 2vw 0; */
-  height: 100vh;
-  /* Add by: pachimanok */
-  padding: 7vh 0;
-  /* Add by: pachimanok */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
+  /* min-height: 100vh; */
 
 
   h2 {
     text-align: center;
     color: var(--color-principal);
 
-    /* margin-top: 0; */
-    /* font-size: 50px; */
     font-size: 6vw;
     margin: 30px;
     font-family: 'Philosopher';
-    margin-bottom: 8rem;
-    /* Add by: pachimanok */
+    margin-top: 0;
   }
-}
-
-#franja-Gris {
-  width: 100%;
-  background-color: lightgray;
-  height: 10vw;
 }
 
 #contenedor-marcas-imagenes {
@@ -328,11 +325,67 @@
 
   img {
     width: 10vw;
-    /* pachimanok say: antes 12vw */
     margin: auto;
-    /* Add by: pachikmanok */
   }
 }
+
+
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.carousel-img {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-principal);;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
 
 #atencion {
   display: flex;
@@ -347,9 +400,7 @@
   padding-top: 9vw;
 
   h2 {
-    font-size:
-      /* 50px; */
-      4rem;
+    font-size: 3rem;
     /* changed by pachimanok */
     border-radius: 5px;
     font-family: 'Philosopher';
@@ -361,7 +412,7 @@
   background-color: #B3D1C0;
   color: white;
   margin-bottom: 0;
-  padding: 3px 1rem
+  padding: 3px 1rem;
     /* +pachimanok */
 }
 
@@ -595,28 +646,37 @@ iframe {
   align-items: center;
   /* padding: 3vw 0; */
 
+  padding: 2vw 5vw;
   h2 {
-    font-size: 80px;
+    /* font-size: 80px; */
     margin: 30px;
     color: var(--color-principal);
     font-family: 'Quicksand';
     font-weight: 600;
+
+    font-size: 60px;
+    margin-bottom: 0;
   }
 
   img {
     /* margin-top: 2vw; */
     /* width: 50vw; */
     /* height: 25vw; */
-    object-fit: cover;
     /* border-radius: 15px; */
-
-    width: 100%;
+    
+    /* width: 100%; */
+    object-fit: cover;
     height: fit-content;
+    width: 900px;
   }
 }
 
 #especialidades-lista-contenedor {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+
+  width: 100%;
+  justify-items: center;
+  margin: 2vw;
 }
 
 .especialidades-lista {
@@ -624,26 +684,33 @@ iframe {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem 20rem;
+  /* gap: 3rem 20rem; */
   justify-items: start;
   margin: 20px;
+
+  gap: 2rem 8rem;
 }
 
 .especialidades-lista li {
   position: relative;
   padding-left: 1.5rem;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: #333;
   font-family: 'Philosopher';
+
+  font-size: 1.5rem;
 }
 
 .especialidades-lista li::before {
   content: '✔';
   position: absolute;
-  left: -20px;
+  /* left: -20px; */
   color: #034844;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   line-height: 1;
+
+  font-size: 1.5rem;
+  left: -5px;
 }
 
 .linea {
@@ -662,12 +729,14 @@ iframe {
   background-color: #CFDBC0;
 
   h2 {
-    font-size: 80px;
+    /* font-size: 80px; */
     margin: 0;
     margin-bottom: 45px;
     color: var(--color-principal);
     font-family: 'Quicksand';
     font-weight: 600;
+    
+    font-size: 60px;
   }
 }
 
@@ -791,14 +860,18 @@ iframe {
   padding: 1rem;
   color: #333;
   list-style: none;
+
+  margin: 0;
 }
 
 .acordeon-contenido li {
   position: relative;
   font-size: 1.5rem;
   color: #333;
-  padding: 20px 0 10px 50px;
+  /* padding: 20px 0 10px 50px; */
   font-family: 'Philosopher';
+
+  padding: 0px 0 15px 35px;
 }
 
 .acordeon-contenido li::before {
@@ -806,7 +879,7 @@ iframe {
   position: absolute;
   left: 0px;
   color: #034844;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1;
 }
 
@@ -894,6 +967,10 @@ blockquote {
     h2 {
       font-size: 40px;
       text-align: center;
+    }
+
+    img{
+      width: 100%;
     }
   }
 
@@ -990,6 +1067,9 @@ blockquote {
   #opciones-contenedor {
     flex-direction: column;
     /* gap: 15px; */
+
+    width: 100%;
+    margin: 0;
   }
 
   .card {
@@ -1000,6 +1080,11 @@ blockquote {
     justify-content: space-between;
     padding: 10px 20px;
     align-items: start;
+
+    padding: 13px 10px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    width: 90%;
 
     h4 {
       margin: 0;
@@ -1034,12 +1119,24 @@ blockquote {
     padding: 5vw;
   }
 
+  #atencion h2{
+    font-size: 2rem;
+    margin: 0;
+  }
+  #atencion-segundo-texto{
+    font-size: 1.5rem;
+  }
+
   #atencion-integral-imagenes-contenedor {
     flex-direction: column;
 
+    gap: 10px;
+    margin-top: 25px;
     img {
-      width: 80vw;
+      /* width: 80vw; */
       height: 215px;
+
+      width: 95vw;
     }
   }
 
@@ -1079,6 +1176,8 @@ blockquote {
   /* ESPECIALIDADES */
 
   #lista {
+
+    padding: 0;
     h2 {
       font-size: 40px;
       text-align: center;
@@ -1086,7 +1185,7 @@ blockquote {
   }
 
   .especialidades-lista {
-    gap: 1rem 0rem;
+    /* gap: 1rem 0rem; */
     margin: 15px 0;
 
     li {
@@ -1158,12 +1257,20 @@ blockquote {
     font-size: 20px;
   }
 
+  .acordeon-contenido {
+    padding: 10px;
+    margin: 0;
+  }
+
   .acordeon-contenido li {
-    font-size: 20px;
+    /* font-size: 20px; */
+
+    font-size: 16px;
+    padding: 5px 0 6px 25px;
   }
 
   .acordeon-contenido li::before {
-    font-size: 20px;
+    font-size: 1rem;
   }
 
 
@@ -1176,7 +1283,48 @@ blockquote {
 }
 
 @media (max-width: 425px) {
+
+
+  #convenios{
+    padding: 10vw 0;
+  }
+
+  .carousel-img {
+      width: 30%;
+  }
+
+  .carousel-btn {
+      font-size: 1.5rem
+  }
+
+  .card {
+    width: 90%;
+  }
+
   #opciones{
-    height: auto;
+    /* height: auto; */
+    min-height: 100vh;
+  }
+
+  #opciones-contenedor {
+    height: 90%;
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .whatsapp-float {
+    bottom: 5px;
+    right: 35px;
+
+    img{
+      width: 60%;
+    }
+
+    h3{
+      font-size: 18px;
+      margin: 0;
+    }
   }
 }
