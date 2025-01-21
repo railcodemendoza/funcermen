@@ -22,7 +22,7 @@
 }
 
 .logo-contenedor {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 50%;
   margin: 10px 30px;
   padding: 10px;
@@ -31,10 +31,12 @@
 }
 
 .logo-contenedor img {
-  width: 60px;
+  width: 130px;
   margin-top: 3px;
   margin-left: 2px;
   margin-right: 2px;
+  border-radius: 50%;
+    background-color: #ffffff;
 }
 
 .menu-center {
@@ -67,6 +69,7 @@
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
+  margin-right: 15px;
 }
 
 .hamburger .line {
@@ -397,7 +400,7 @@
 
   min-height: 100vh;
   /* padding: 5vw; - pachimanok */
-  padding-top: 9vw;
+  /* padding-top: 9vw; */
 
   h2 {
     font-size: 3rem;
@@ -425,6 +428,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 
   img {
     width: 32vw;
@@ -444,20 +448,10 @@
 }
 
 #atencion-integral-imagenes-contenedor img {
-  width:
-    /* 30vw; */
-    25vw;
-  /* changed by pachimanok */
-  height:
-    /* 200px;  */
-    25vh;
-  /* changed by pachimanok */
+  width: 25vw;
+  height: 30vh;
   object-fit: cover;
-  border-radius:
-    /* 8px; */
-    20px;
-  /* changed by pachimanok */
-
+  border-radius: 20px;
   transition: all 0.5s ease-out;
 }
 
@@ -901,10 +895,13 @@ iframe {
   line-height: 1.6;
   color: #333;
   margin: 0 auto;
+  margin-top: 5vw;
   max-width: 800px;
 
   p {
     font-family: 'Quicksand';
+    font-size: 23px;
+    margin-left: 10px;
   }
 }
 
@@ -913,16 +910,21 @@ iframe {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   font-family: 'Philosopher';
+  font-size: 35px;
 }
 
 #taller-estimulacion-cognitiva h3 {
   margin-top: 1.5rem;
   font-family: 'Philosopher';
+  font-size: 28px;
+  margin-left: 25px;
 }
 
 #taller-estimulacion-cognitiva ul {
   list-style: none;
   padding: 0;
+  margin-left: 30px;
+  font-size: 23px;
 }
 
 #taller-estimulacion-cognitiva li {
@@ -940,6 +942,7 @@ iframe {
 }
 
 #imagen-talleres {
+  margin-top: 50px;
   img {
     width: 100%;
   }
@@ -1129,9 +1132,9 @@ blockquote {
 
   #atencion-integral-imagenes-contenedor {
     flex-direction: column;
-
+    margin-bottom: 5px;
     gap: 10px;
-    margin-top: 25px;
+    margin-top: 10px;
     img {
       /* width: 80vw; */
       height: 215px;
@@ -1234,6 +1237,9 @@ blockquote {
     }
   }
 
+  #imagen-talleres {
+    margin: 0;
+  }
 
   /* ESTUDIOS */
 
@@ -1284,6 +1290,9 @@ blockquote {
 
 @media (max-width: 425px) {
 
+  .logo-contenedor img {
+    width: 90px;
+  }
 
   #convenios{
     padding: 10vw 0;
@@ -1342,6 +1351,26 @@ blockquote {
       gap: 1rem 0rem;
     }
   }  
+
+  #taller-estimulacion-cognitiva {
+
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 18px
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    ul {
+      margin-left: 5px;
+      font-size: 18px;
+    }
+  }
 
   .whatsapp-float {
     bottom: 5px;
