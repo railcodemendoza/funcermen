@@ -86,6 +86,11 @@ function Home() {
             <img src="atencion-integral (2).png" alt="" />
             <img src="atencion-integral (3).png" alt="" />
             </div>
+            <div id='atencion-integral-imagenes-contenedor'>
+            <img src="foto1.jpg" alt="" />
+            <img src="foto2.jpg" alt="" />
+            <img src="foto3.jpg" alt="" />
+            </div>
         </section>
         <section id='directores'>
             <div id='director-contenedor'>
