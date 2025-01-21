@@ -9,7 +9,8 @@ const Especialidades = () => {
         <h1>Especialidades</h1>
     </section>
     <section id='lista'>
-        <h2>Especialidades adultos</h2>
+        {/* <h2>Especialidades adultos</h2> */}
+        <h2>ESPECIALIDADES ADULTOS</h2>
         <div id="especialidades-lista-contenedor">
             <ul className="especialidades-lista">
                 <li>Neurología</li>
@@ -28,7 +29,8 @@ const Especialidades = () => {
         <img src="clinica-medica.png" alt="" />
     </section>
     <section id='infantiles'>
-        <h2>Especialidades infantiles</h2>
+        {/* <h2>Especialidades infantiles</h2> */}
+        <h2>ESPECIALIDADES INFANTILES</h2>
         <ul className="especialidades-lista">
             <li>Pediatría</li>
             <li>Endocrinología</li>
