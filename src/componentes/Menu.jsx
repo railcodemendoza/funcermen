@@ -14,7 +14,7 @@ const Menu = () => {
     <header id="header">
       <div className="logo-contenedor">
         <HashLink to="/">
-          <img src="logo.png" alt="Logo" />
+          <img src="Funcermen-logo.png" alt="Logo" />
           </HashLink>
       </div>
 

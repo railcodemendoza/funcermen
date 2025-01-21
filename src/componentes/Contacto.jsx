@@ -7,7 +7,7 @@ export const Contacto = () => {
         <div id='contacto'>
             <div id='contacto-izq'>
                 <div className='logo-contenedor'>
-                    <img src="logo.png" alt="logo" />
+                    <img src="Funcermen-logo.png" alt="logo" />
                 </div>
                 <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.977542954783!2d-68.8263144472977!3d-32.89519544557594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0939e4aec17d%3A0x643c5c09bcbca3ae!2sConsultorios%20FunCerMen!5e0!3m2!1ses-419!2sar!4v1734269623788!5m2!1ses-419!2sar">
