@@ -358,8 +358,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--color-principal);;
-  color: white;
+  background-color: transparent;;
+  color: lightgray;
   border: none;
   padding: 10px;
   cursor: pointer;

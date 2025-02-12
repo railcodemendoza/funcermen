@@ -1,18 +1,36 @@
 import React, { useState, useEffect } from "react";
+import '../assets/Carousel.css';
+
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "/ospe.png",
-    "/sancor.png",
-    "/osde.png",
-    "/osadef.png",
-    "/medicus.png",
-    "/galeno.png",
-    "/medife.png",
+    "CONVENIOS OBRAS SOCIALES/1 - OSPE.png",
+    "CONVENIOS OBRAS SOCIALES/2 - SANCOR.png",
+    "CONVENIOS OBRAS SOCIALES/3- OSDE..png",
+    "CONVENIOS OBRAS SOCIALES/4 - OSADEF.png",
+    "CONVENIOS OBRAS SOCIALES/5 - HIGEA.jpg",
+    "CONVENIOS OBRAS SOCIALES/6 - MEDICUS.png",
+    "CONVENIOS OBRAS SOCIALES/7 - GALENO..png",
+    "CONVENIOS OBRAS SOCIALES/8 - UNIMED.png",
+    "CONVENIOS OBRAS SOCIALES/9 - ANDES SALUD.jpg",
+    "CONVENIOS OBRAS SOCIALES/10 - SCIS.jpg",
+    "CONVENIOS OBRAS SOCIALES/11 - OSDEPYM..jpg",
+    "CONVENIOS OBRAS SOCIALES/12 - MEDIFE..png",
+    "CONVENIOS OBRAS SOCIALES/13 - NOBIS.png",
+    "CONVENIOS OBRAS SOCIALES/14- BOREAL.png",
+    "CONVENIOS OBRAS SOCIALES/15 -OSDOP.jpg",
+    "CONVENIOS OBRAS SOCIALES/16- ASOCIART.png",
+    "CONVENIOS OBRAS SOCIALES/17 -FED PAT ART.png",
+    "CONVENIOS OBRAS SOCIALES/18 -LA SEGUNDA..png",
+    "CONVENIOS OBRAS SOCIALES/19- PREVENCION.jpg",
+    "CONVENIOS OBRAS SOCIALES/20- 20DEOCTUBRE.jpg",
+
+
+
   ];
 
-  const visibleImages = 4; // Número de imágenes visibles al mismo tiempo
+  const visibleImages = 6; // Número de imágenes visibles al mismo tiempo
 
   // Rotación automática
   useEffect(() => {
