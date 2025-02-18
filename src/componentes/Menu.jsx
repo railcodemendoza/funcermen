@@ -29,6 +29,8 @@ const Menu = () => {
         <HashLink smooth to="/especialidades#especialidades" onClick={toggleMenu}>ESPECIALIDADES</HashLink>
         <HashLink smooth to="/talleres#talleres" onClick={toggleMenu}>TALLERES</HashLink>
         <HashLink smooth to="/estudios#estudios" onClick={toggleMenu}>ESTUDIOS</HashLink>
+        <HashLink smooth to="https://neuroargentina.blogspot.com/" onClick={toggleMenu} target='_blank'>BLOG</HashLink>
+
       </nav>
     </header>
   );
