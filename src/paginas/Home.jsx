@@ -10,7 +10,7 @@ function Home() {
         
         <section className="inicio" id='inicio'>
             <div>
-            <h1>FUNCERMEN</h1>
+            <h1 translate="no" >FUNCERMEN</h1>
             <div className="linea"></div>
             <h3>Consultorios Médicos</h3>
             </div>
@@ -64,7 +64,7 @@ function Home() {
         </section>
         <section id='convenios'>
           
-            <h2>Convenios</h2>
+            <h2 translate="no">Convenios</h2>
             {/* <div id='contenedor-marcas-imagenes'>
             <img src="ospe.png" alt="ospe" />
             <img src="sancor.png" alt="sancor" />
