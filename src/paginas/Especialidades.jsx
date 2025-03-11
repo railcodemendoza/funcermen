@@ -39,6 +39,8 @@ const Especialidades = () => {
             <li>Oftamología</li>
             <li>Fisiatra</li>
             <li>Psicopedagogía</li>
+            <li>Nutrición</li>
+
         </ul>
     </section>
     <section id='cuida'>
